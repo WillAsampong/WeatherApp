@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    background-image: url(./images/benoit-deschasaux-XA8xxmPdMZY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+.card {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px 35px;
+    width: 90%;
+    margin: 70px auto;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.search input{
+    border: 0;
+    outline: none;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 55px;
+    flex: 1;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search input:invalid {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: initial !important;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.fa-magnifying-glass {
+    font-size: 1.2em;
+}
+
+.weather {
+    display: none;
+    padding: 10px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.line  {
+    margin-top: 35px;
+    border-bottom: 1px solid #fff;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 350px) {
+    .search {
+        width: 250px;
+
+    }
+
+    .search input {
+        width: 60%;
+        height: 30px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+}
